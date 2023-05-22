@@ -10,21 +10,15 @@
 
 <body>
     <?php
-    // Commentaire en ligne
-    $str1 = "Hello";
+
+    $str1 = "Hello LaPlateforme!";
+    // Commentez sur une ligne
+    echo $str1;
     /*
     Commentaire de bloc
+    sur plusieurs lignes
     */
-    $str2 = "LaPlateforme";
-    # Un autre commentaire en ligne
-    $str3 = "!";
-    echo $str1 . " " . $str2 . " " . $str3 . "<br>";
-
-    echo $str1 . "<br>"; // Affiche la variable $str1 avec un retour à la ligne
-    echo $str2 . "<br>"; /*
-Affiche la variable $str2 avec un retour à la ligne
-*/
-    echo $str3 . "<br>"; # Affiche la variable $str3 avec un retour à la ligne
+    echo $str1;
     ?>
 
 
