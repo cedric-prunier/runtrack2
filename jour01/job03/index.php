@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$booleanVar = true;
+$integerVar = 42;
+$stringVar = "Hello, world!";
+$floatVar = 3.14;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <?php
-    $booleanVar = true;
-    $integerVar = 42;
-    $stringVar = "Hello, world!";
-    $floatVar = 3.14;
-
-    // Tableau d'informations
-    $table = '<table>
+// Tableau d'informations
+$table = '<table>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -48,10 +37,5 @@
             </tbody>
         </table>';
 
-    echo $table;
-    ?>
-
-
-</body>
-
-</html>
+echo $table;
+?>

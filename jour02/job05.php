@@ -10,29 +10,24 @@
 
 <body>
     <?php
-    function estPremier($nombre)
-    {
-        if ($nombre < 2) {
-            return false;
-        }
+    $isPrime = true;
 
-        for ($i = 2; $i <= sqrt($nombre); $i++) {
-            if ($nombre % $i === 0) {
-                return false;
+    for ($number = 2; $number <= 1000; $number++) {
+        $isPrime = true;
+
+        for ($divisor = 2; $divisor <= sqrt($number); $divisor++) {
+            if ($number % $divisor == 0) {
+                $isPrime = false;
+                break;
             }
         }
 
-        return true;
-    }
-
-    for ($i = 2; $i <= 1000; $i++) {
-        if (estPremier($i)) {
-            echo $i . "<br />";
+        if ($isPrime) {
+            echo $number . "<br />";
         }
     }
-    $i = sqrt(2);
-    echo $i;
     ?>
+
 
 </body>
 
