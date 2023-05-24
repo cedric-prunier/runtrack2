@@ -9,16 +9,19 @@ $dic = array(
 $str = strtolower($str);
 
 // Parcourir la chaîne pour compter les occurrences de consonnes et de voyelles
-for ($i = 0; $i < strlen($str); $i++) {
-    $char = $str[$i];
+$length = 0;
+while (isset($str[$length])) {
+    $char = $str[$length];
 
-    if (ctype_alpha($char)) { // Vérifier si le caractère est une lettre
-        if (in_array($char, array('a', 'e', 'i', 'o', 'u', 'y'))) {
+    if ($char >= 'a' && $char <= 'z') { // Vérifier si le caractère est une lettre
+        if ($char == 'a' || $char == 'e' || $char == 'i' || $char == 'o' || $char == 'u' || $char == 'y') {
             $dic["voyelles"]++;
         } else {
             $dic["consonnes"]++;
         }
     }
+
+    $length++;
 }
 
 // Afficher les résultats dans un tableau HTML
