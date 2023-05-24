@@ -1,9 +1,12 @@
 <?php
 $str = "Dans l'espace, personne ne vous entend crier";
-$compte = 0;
-for ($i = 0; $i < strlen($str); $i++) {
-    $compte++;
+$count = 0;
+$strLenght = 0;
 
+while (isset($str[$strLenght])) {
+    $count++;
+    $strLenght++;
 }
-echo "Le nombre de caractères est de " . $compte . ".";
+
+echo "Le nombre de caractères dans la chaîne est : " . $count;
 ?>
