@@ -1,0 +1,36 @@
+body {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+}
+form {
+        width: 50vw;
+        height: 50vh;
+        background-color: rgba(241, 93, 93, 0.534);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+label {
+        color: white;
+        font-size: 2rem;
+}
+#style-select {
+        background-color: black;
+        color: white;
+        padding: 20px;
+}
+#submit {
+        padding: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+}
