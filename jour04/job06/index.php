@@ -16,6 +16,7 @@ if (!empty($_GET)) {
         echo "Nombre impair";
     }
 }
+
 ?>
 
 <body>

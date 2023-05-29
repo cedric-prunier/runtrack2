@@ -9,7 +9,7 @@
 <body>
     <h1>Formulaire avec styles</h1>
 
-    <form action="" method="post">
+    <form action="index.php" method="post">
         <label for="style">Style :</label>
         <select name="style" id="style-select">
             <option value="style1.css">Style 1</option>
