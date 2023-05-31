@@ -1,0 +1,4 @@
+SELECT *
+FROM etudiants
+WHERE TIMESTAMPDIFF(YEAR, naissance, CURRENT_DATE) >= 18;
+
